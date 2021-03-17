@@ -71,4 +71,5 @@ gem 'rake', '~> 12.3.3'
 gem 'devise', git: "https://github.com/heartcombo/devise.git",  branch: "ca-omniauth-2"
 gem 'omniauth', '1.9.1'
 gem 'omniauth-google-oauth2'
+gem 'rails_admin'
 

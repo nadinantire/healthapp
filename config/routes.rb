@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/yes', as: 'rails_admin'
   get 'home/index'
 
   resources :medicine_intake_logs

@@ -12,11 +12,7 @@
 
         <% if !@user && !@doctor %>
         <h4>
-            For Users                 <%= link_to "Sign in",  new_user_session_path,:"data-no-turbolink"=>true,method:"get" %>
-            <br/>
-            <br/>
-            For Doctors                 <%= link_to "Sign in",  new_user_session_path,:"data-no-turbolink"=>true,method:"get" %>
-            <br/>
+        <%= image_tag("africa.jpeg") %>
 
         </h4>
         <% end %>
