@@ -2,6 +2,7 @@ class DoctorAppointmentsController < ApplicationController
   before_action :set_doctor_appointment, only: [:show, :edit, :update, :destroy]
   before_action :set_doctors_and_users, only: [:new, :edit]
   before_action :set_doctor_user_from_session, only: [:index, :new]
+  before_action :authenticate_user!
 
   # GET /doctor_appointments
   # GET /doctor_appointments.json

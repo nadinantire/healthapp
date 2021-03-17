@@ -73,3 +73,7 @@ gem 'omniauth', '1.9.1'
 gem 'omniauth-google-oauth2'
 gem 'rails_admin'
 
+gem "rspec-rails"
+gem 'spring-commands-rspec'
+gem "factory_bot_rails"
+gem 'webdrivers'

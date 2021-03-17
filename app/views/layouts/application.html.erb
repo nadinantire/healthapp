@@ -35,7 +35,9 @@
                       </li>
                     <% end %>
                     <li class="pure-menu-item">
-                      <%= link_to 'Doctor Notifications', doctor_notifications_path, class: 'pure-menu-link'  %>
+                      <% if user_signed_in? && current_user.user_role== 'doctor'%>
+                        <%= link_to 'Doctor Notifications', doctor_notifications_path, class: 'pure-menu-link'  %>
+                      <% end %>
                     </li>
                     <li class="pure-menu-item">
                       <%= link_to 'In Patients', in_patients_path, class: 'pure-menu-link'  %>

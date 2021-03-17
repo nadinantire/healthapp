@@ -2,6 +2,7 @@ class DoctorNotificationsController < ApplicationController
   before_action :set_doctor_notification, only: [:show, :edit, :update, :destroy]
   before_action :set_doctors_and_users, only: [:new, :edit]
   before_action :set_doctor_user_from_session, only: [:index, :new]
+  before_action :authenticate_user!
 
   # GET /doctor_notifications
   # GET /doctor_notifications.json
